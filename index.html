@@ -4,8 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    
       
     <!-- Additional CSS must be placed after Bootstrap CSS -->
 
@@ -18,32 +16,48 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
-    <title>NuCamp - A Better Way To Camp</title>
+    <title>Queen City Bites!</title>
 </head>
 
 <body>
-      <!-- data-html="true" allows the strong tag works in the title attribute -->
-      <header class="jumbotron jumbo jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-12  col-md-4  align-self-center">
-                    <img class="img-fluid" src="img/logo.png" alt="logo">
-                </div>
-                <div class="col-12 col-md-4  align-self-center">
-                    <h1>NuCamp</h1>
-                    <h2>a better way to camp</h2>
-                </div>
-                <div class="col-md-4 col-xl-2 mt-4">
-                  <!-- Add reserve Modal form when this button is clicked-->
-                  <a>
-                    <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#reserveModal">
-                      Reserve Campsite
-                    </button>
-                  </a>
-                </div>
-            </div>
-        </div>
-    </header>
+      <!-- Queen City Bytes row -->
+        <nav class="navbar navbar-dark bg-dark">
+
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#"><h1>Queen City Bytes</h1></a>
+        
+          <!-- Collapse button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+        
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+        
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">View Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reservation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Location & Hours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Story</a>
+              </li>
+
+            </ul>
+        
+          </div>
+          <!-- Collapsible content -->
+        
+        </nav>   
 
         <!-- To create Reserve form (reserveModal) -->
         <div id="reserveModal" class="modal fade" role="dialog">
@@ -102,8 +116,8 @@
           </div>
         </div>
     
-    <!-- Home, About Contact and Login Modal icon-->    
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <!-- Home, About Contact and Login Modal icon--> 
+    <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" height="30" width="30">
@@ -127,6 +141,7 @@
           </div>
         </div>
     </nav>
+  
 
     <!-- To create Login form (loginModal) -->
     <div id="loginModal" class="modal fade" role="dialog">
@@ -307,34 +322,5 @@
     
 
 </body>
-
-<!--
-    Instal Ext  HTML CSS Support - CSS Intellisense
-    In the terminal section type this:
-    npm init
-    npm install lite-server --save-dev
-    npm install jquery@3.5.1 popper.js@1.16.1
-    npm install bootstrap@4.5.2 
-
-    Modify package.json:
-    "main": "index.html",
-    "scripts": {
-    "lite": "lite-server",
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1" }
-
-    Add Bootstrap code in the <head> section & after the <footer>
-
-    This is from Week 4
-    npm install --save-dev onchange@7.0.0
-    npm install --save-dev -E parallelshell@3.0.1
-
-    npm install --save-dev copyfiles@2.2.0
-    npm install --save-dev imagemin-cli@5.1.0
-    npm install --save-dev usemin-cli@0.6.0
-    npm install --save-dev rimraf@3.0.2
-
-
--->
 
 </html>
